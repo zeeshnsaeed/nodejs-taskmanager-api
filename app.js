@@ -10,10 +10,6 @@ const port = 8000;
 app.use(express.json());
 
 // Routes
-app.get("/hello", (req, res) => {
-  res.send("Task manager application");
-});
-
 app.use("/api/v1/tasks", tasks);
 
 const start = async () => {
